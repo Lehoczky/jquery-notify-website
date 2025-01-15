@@ -75,7 +75,7 @@ $(function(){
 	},{ expires:false });
 	
 	container.notify("widget").find("input").bind("click", function(){
-		container.notify("create", 1, { title:'Another Notification!', text:'The quick brown fox jumped over the lazy dog.' });
+		container.notify("create", { title:'Another Notification!', text:'The quick brown fox jumped over the lazy dog.' });
 	});
     
 	// third
@@ -96,7 +96,6 @@ $(function(){
 	<h1>jQuery UI Notify Widget</h1>
 	<p>This is a growl/ubuntu-like notification system built on top of jQuery UI.</p>
 	<p>Download &amp; follow @ <a href="http://github.com/ehynds/jquery-notify">http://github.com/ehynds/jquery-notify</a>.</p>
-	<p>Documentation @ <a href="http://www.erichynds.com/jquery/a-jquery-ui-growl-ubuntu-notification-widget/">http://www.erichynds.com/jquery/a-jquery-ui-growl-ubuntu-notification-widget/</a></p>
 	
 	<form style="margin:20px 0">
 		<input type="button" id="default" value="Open with default configuration" />
